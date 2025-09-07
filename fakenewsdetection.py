@@ -27,7 +27,7 @@ tfidf_test = tfidf_vectorizer.transform(X_test)
 model = LogisticRegression(max_iter = 1000)
 model.fit(tfidf_train, y_train)
 
-sample_test = ['india merges with pakistan']
+sample_test = ['no war between russia and ukraine']
 sample_tfidf = tfidf_vectorizer.transform(sample_test)
 prediction = model.predict(sample_tfidf)
 print(prediction)
